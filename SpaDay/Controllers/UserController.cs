@@ -34,7 +34,7 @@ namespace SpaDay.Controllers
                         Email = addUserViewModel.Email
                     };
 
-                    return View(addUserViewModel);
+                    return View("Index", newUser);
                 }
                 else
                 {

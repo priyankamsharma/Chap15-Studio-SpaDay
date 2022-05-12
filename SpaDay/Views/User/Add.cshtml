@@ -10,19 +10,20 @@
 <form method="post" action="/user">
 
 <div class="form-group">
-   <label asp-for="UserName">User Name</label>
-   <input asp-for="UserName" />
-   <span asp-validation-for="UserName"></span>
+   <label asp-for="Username">User Name</label>
+   <input asp-for="Username" />
+   <span asp-validation-for="Username"></span>
 </div>
-
-<br>
 <div class="form-group">
    <label asp-for="Password ">Password</label>
    <input type="password" asp-for="Password" />
    <span asp-validation-for="Password"></span>
 </div>
-
-<br>
+<div class="form-group">
+   <label asp-for="Email">Email Address</label>
+   <input asp-for="Email" />
+   <span asp-validation-for="Email"></span>
+</div>
 <div class="form-group">
    <label asp-for="VerifyPassword">Verify Password</label>
    <input type="password" asp-for="VerifyPassword" />
