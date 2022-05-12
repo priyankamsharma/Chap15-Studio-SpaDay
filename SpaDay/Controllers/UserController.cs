@@ -23,8 +23,8 @@ namespace SpaDay.Controllers
         [Route("/user")]
         public IActionResult SubmitAddUserForm(AddUserViewModel addUserViewModel)
         {
-            if (ModelState.IsValid)
-            {
+            //if (ModelState.IsValid)
+            //{
                 if (addUserViewModel.Password == addUserViewModel.VerifyPassword)
                 {
                     User newUser = new User
@@ -42,7 +42,7 @@ namespace SpaDay.Controllers
                     return View("Add");
                 }
             }
-            return View("Add");
-        }
+        //    return View("Add");
+        //}
     }
 }
