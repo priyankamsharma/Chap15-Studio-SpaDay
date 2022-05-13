@@ -12,14 +12,14 @@ namespace SpaDay.ViewModels
 
         [Required(ErrorMessage = "Password is required")]
         [StringLength(20, MinimumLength = 6, ErrorMessage = "Password is too short. Passwords must be at least 6 characters long.")]
-        [Compare("VerifyPassword", ErrorMessage = "Password and Verify Password must match!")]
+        [Compare("VerifyPassword", ErrorMessage = "Password and Verify Password must be same!")]
         public string Password { get; set; }
 
         [EmailAddress]
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Verify Password is required")]
-        [StringLength(20, MinimumLength = 6, ErrorMessage = "Sorry, passwords does not matches.")]
+        [StringLength(20, MinimumLength = 6, ErrorMessage = "Password is too short. It must be at least 6 characters long.")]
         public string VerifyPassword { get; set; }  
 
         public AddUserViewModel()
